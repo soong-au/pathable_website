@@ -1,0 +1,322 @@
+/* CSS 변수 정의 */ 
+:root { 
+--primary-color: #004080; 
+--secondary-color: #00bfae; 
+--background-color: #f9f9f9; 
+--hero-bg-color: #e6f7f5; 
+--hero2-bg-color: #e6f0f7; 
+} 
+
+/* 전체 스타일 */ 
+body { 
+margin: 0; 
+font-family: Arial, sans-serif; 
+line-height: 1.6; 
+background-color: white; 
+color: var(--primary-color); 
+} 
+
+/* 헤더 */ 
+header { 
+background-color: white; 
+position: sticky; 
+top: 0; 
+z-index: 100; 
+} 
+
+.nav-container { 
+display: flex; 
+justify-content: space-between; 
+align-items: center; 
+max-width: 1100px; 
+margin: 0 auto; 
+padding: 1.5rem 1rem; 
+box-sizing: border-box; 
+} 
+
+/* 기본 메뉴 숨김 */ 
+.nav-links { 
+display: flex; 
+gap: 1rem; 
+} 
+
+.menu-toggle { 
+display: none; /* 데스크탑에서는 숨김 */ 
+font-size: 2rem; 
+background: none; 
+border: none; 
+cursor: pointer; 
+} 
+
+/* 로고 */ 
+.logo { 
+display: flex; 
+flex-direction: column; 
+align-items: center; 
+} 
+
+.logo-text { 
+font-size: 2.5rem; 
+font-weight: bold; 
+line-height: 1; 
+} 
+
+.logo .path { 
+color: var(--primary-color); 
+} 
+
+.logo .able { 
+color: var(--secondary-color); 
+} 
+
+.logo .subtitle { 
+font-size: 1.2rem; 
+color: var(--primary-color); 
+text-align: center; 
+margin-top: 0; 
+line-height: 1; 
+width: 100%; 
+font-weight: normal; 
+} 
+
+/* 네비게이션 */ 
+nav a { 
+margin-left: 2rem; 
+text-decoration: none; 
+color: var(--primary-color); 
+font-weight: 500; 
+font-size: 1.1rem; 
+} 
+
+nav a:hover { 
+color: var(--secondary-color); 
+} 
+
+/* Hero Section */ 
+.hero { 
+background-size: cover; /* 배경 이미지가 섹션을 꽉 채우도록 설정 */ 
+background-position: center; /* 이미지를 중앙에 위치 */ 
+background-repeat: no-repeat; /* 이미지 반복 방지 */ 
+min-height: 60vh; /* 뷰포트 높이의 80%로 설정 (예시) */ 
+color: white; 
+display: flex; 
+flex-wrap: wrap; 
+align-items: center; 
+justify-content: center; 
+padding: 2rem 1rem; /* 상하 균등 */ 
+background-color: var(--hero-bg-color); 
+gap: 2rem; 
+} 
+
+/* index.html의 hero 섹션에만 적용되는 스타일 */
+.home-page .hero {
+  background-image: url('../assets/images/home.jpg');
+}
+
+.hero-text { 
+flex: 1; 
+min-width: 280px; 
+max-width: 600px; 
+padding: 1rem; 
+} 
+
+/* Hero 내부 첫 요소 상단 여백 제거 */ 
+.hero-text > *:first-child { 
+margin-top: 0; 
+} 
+
+.tagline { 
+font-size: 2.5rem; 
+font-weight: bold; 
+text-align: center; 
+margin-bottom: 1rem; /* 아래쪽 간격만 */ 
+} 
+
+.tagline .yourPath { 
+color: var(--primary-color); 
+text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.7); /* 텍스트 그림자 추가 */ 
+} 
+.tagline .yourPoss { 
+color: var(--secondary-color); 
+text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7); /* 텍스트 그림자 추가 */ 
+} 
+
+.subcopy { 
+margin: 0 0 1.5rem 0; /* 위 여백 제거 */ 
+font-size: 1.5rem; 
+color: white; 
+text-align: center; 
+} 
+
+.hero-buttons { 
+text-align: center; 
+} 
+
+.hero-buttons .btn { 
+display: inline-block; 
+margin: 0.5rem 0.5rem 0 0.5rem; 
+padding: 0.7rem 1.4rem; 
+border-radius: 8px; 
+background: var(--secondary-color); 
+color: white; 
+text-decoration: none; 
+font-weight: bold; 
+transition: 0.3s; 
+} 
+
+.hero-buttons .btn:hover { 
+background: #009688; 
+} 
+
+.hero-buttons .btn-outline { 
+background: transparent; 
+border: 2px solid var(--secondary-color); 
+color: var(--secondary-color); 
+} 
+
+.hero-image { 
+flex: 1; 
+min-width: 280px; 
+max-width: 600px; 
+text-align: center; 
+} 
+
+.hero-image img { 
+max-width: 100%; 
+border-radius: 16px; 
+box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+} 
+
+/* 들여쓰기 */ 
+.indent { 
+display: inline-block; 
+margin-left: 20px; 
+} 
+
+/* About Us 섹션 */ 
+.hero-title { 
+text-align: center; 
+padding: 2rem 1rem 1rem 1rem; 
+background-color: var(--hero-bg-color); 
+} 
+
+/* services.html, contact.html, about.html의 Hero 제목에만 적용되는 공통 스타일 */
+.services-page .hero-title,
+.contact-page .hero-title,
+.about-page .hero-title {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 각 페이지별 배경 이미지 설정 */
+.services-page .hero-title {
+  background-image: url('../assets/images/services.jpg');
+}
+.contact-page .hero-title {
+  background-image: url('../assets/images/contact.jpg');
+}
+.about-page .hero-title {
+  background-image: url('../assets/images/about.jpg');
+}
+
+.hero-title h2 { 
+font-size: 2.5rem; 
+font-weight: bold; 
+color: var(--secondary-color); 
+margin: 0; 
+} 
+
+.hero-content { 
+max-width: 800px; 
+margin: 0 auto; 
+padding: 2rem 1.5rem; 
+line-height: 1.8; 
+font-size: 1.1rem; 
+color: #333; 
+} 
+
+.hero-content h3 { 
+font-size: 1.5rem; 
+color: var(--primary-color); 
+margin-top: 1.5rem; 
+margin-bottom: 0.5rem; 
+} 
+
+.hero-content p { 
+margin: 0 0 1rem 0; 
+} 
+
+.hero-content ul { 
+list-style: disc inside; 
+margin: 0.5rem 0 1.5rem 0; 
+padding: 0; 
+} 
+
+.hero-content li { 
+margin: 0.4rem 0; 
+} 
+
+.hero-content .optional { 
+font-size: 0.9rem; 
+color: gray; 
+font-weight: normal; 
+} 
+
+
+/* 푸터 */ 
+footer { 
+text-align: center; 
+padding: 2rem 1rem; 
+background-color: var(--background-color); 
+font-size: 0.9rem; 
+} 
+
+/* 모바일 화면 대응 */ 
+@media screen and (max-width: 768px) { 
+
+.nav-container { 
+flex-direction: row; 
+justify-content: space-between; 
+align-items: center; 
+} 
+
+.menu-toggle { 
+display: block; 
+} 
+
+.nav-links { 
+display: none; 
+flex-direction: column; 
+width: 100%; 
+position: absolute; 
+top: 100%; 
+left: 0; 
+background-color: white; 
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+padding: 1rem; 
+box-sizing: border-box; 
+} 
+
+.nav-links.show { 
+display: flex; 
+} 
+
+.nav-links a { 
+margin: 0.5rem 0; 
+text-align: center; 
+} 
+
+.hero { 
+flex-direction: column; 
+padding: 5rem 1rem 0 1rem;
+} 
+
+.hero-text, .hero-image { 
+max-width: 100%; 
+} 
+}
