@@ -34,12 +34,32 @@
         </section>
 
         <section class="hero-content">
-        <p>Email: <a href="mailto:info@pathable.com.au">info@pathable.com.au</a></p>
-        <p>Phone: 04XX XXX XXX</p>
+  <p>Email: <a href="mailto:info@pathable.com.au">info@pathable.com.au</a></p>
+  <p>Phone: 04XX XXX XXX</p>
 
-        <h2>Referral Form</h2>
-        <iframe src="여기에_구글폼_URL" width="640" height="800" frameborder="0"></iframe>
-        </section>
+  <h2>Contact Form</h2>
+  
+  <form id="contactForm">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    
+    <div class="form-group">
+      <label for="enquiry">Enquiry</label>
+      <textarea id="enquiry" name="enquiry" rows="5" required></textarea>
+    </div>
+    
+    <button type="submit">Send Message</button>
+  </form>
+  
+  <div id="form-message"></div>
+</section>
     </main>
 
   <footer>
