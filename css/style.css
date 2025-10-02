@@ -316,6 +316,60 @@ font-weight: normal;
   font-weight: bold;
 }
 
+/* Founder section */
+.founder-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  margin-top: 0; /* 기존 섹션과 간격 확보 */
+}
+.founder-photo img {
+  max-width: 300px;
+  border-radius: 10px;
+}
+.founder-text {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Accordion (Why Choose Us) */
+.accordion-btn {
+  width: 100%;
+  text-align: left;
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: #f1f1f1;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 5px;
+  transition: background-color 0.3s;
+  font-weight: 500;
+}
+
+.accordion-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  background-color: #fafafa;
+  padding: 0 20px;
+}
+
+.accordion-content p {
+  margin: 10px 0;
+}
+
+.accordion-btn.active + .accordion-content {
+  max-height: 500px; /* 충분히 펼쳐질 수 있는 값 */
+  padding: 10px 20px;
+}
+
+
 /* 푸터 */ 
 footer { 
 text-align: center; 
@@ -372,4 +426,28 @@ max-width: 100%;
 .subcopy {
   font-size: 1.2rem;
 }
+
+.founder-container {
+  flex-direction: column;
+  gap: 1rem;
+}
+.founder-photo img {
+  max-width: 100%;
+}
+
+/* ✅ 버튼을 세로 정렬 */
+.hero-buttons {
+  display: flex;
+  flex-direction: column; /* 세로 배치 */
+  gap: 1rem; /* 버튼 간격 */
+  width: 80%; /* 버튼 전체 넓이 */
+  align-items: center; /* 내부 버튼 중앙 정렬 */
+  margin: 0 auto; /* ✅ hero-buttons 자체를 중앙으로 */
+}
+
+.hero-buttons .btn {
+  width: 80%; /* hero-buttons 기준으로 꽉 차게 */
+  text-align: center;
+}
+
 }
