@@ -371,8 +371,7 @@ font-weight: normal;
 
 .service-list {
   margin-bottom: 1.5em;
-  padding-bottom: 0.8em;
-  border-bottom: 1px solid #eee;
+  line-height: 1.6;
 }
 
 
