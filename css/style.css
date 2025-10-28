@@ -369,7 +369,7 @@ font-weight: normal;
   padding: 10px 20px;
 }
 
-ul.service-list li {
+.service-list {
   margin-bottom: 1.5em;
   padding-bottom: 0.8em;
   border-bottom: 1px solid #eee;
