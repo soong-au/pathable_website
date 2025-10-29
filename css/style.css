@@ -84,6 +84,10 @@ font-weight: normal;
   color: inherit;        /* 기존 색상 유지 */
   display: inline-block; /* 클릭 영역을 로고 전체로 확장 */
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2ada834 (Update about, contact, services pages and CSS/JS)
 /* 네비게이션 */ 
 nav a { 
 margin-left: 2rem; 
