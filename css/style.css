@@ -79,6 +79,11 @@ width: 100%;
 font-weight: normal; 
 } 
 
+.logo-link {
+  text-decoration: none; /* 밑줄 제거 */
+  color: inherit;        /* 기존 색상 유지 */
+  display: inline-block; /* 클릭 영역을 로고 전체로 확장 */
+}
 /* 네비게이션 */ 
 nav a { 
 margin-left: 2rem; 
