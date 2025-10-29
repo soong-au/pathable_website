@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // 모바일 메뉴 토글
+  // ✅ 모바일 메뉴 토글
   const toggleButton = document.querySelector('.menu-toggle');
   const navLinks = document.querySelector('.nav-links');
   if (toggleButton && navLinks) {
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 문의 폼 제출
+  // ✅ 문의 폼 제출
   const contactForm = document.getElementById('contactForm');
   const formMessage = document.getElementById('form-message');
   if (contactForm && formMessage) {
@@ -43,16 +43,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 아코디언 기능
-  const accBtns = document.querySelectorAll('.accordion-btn');
-  accBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      btn.classList.toggle('active');
-      const content = btn.nextElementSibling;
-      if (content.style.maxHeight) {
-        content.style.maxHeight = null;
-      } else {
+  // ✅ 아코디언 기능 (하나만 열리는 형태)
+  document.querySelectorAll(".accordion-btn").forEach((button) => {
+    button.addEventListener("click", () => {
+      const content = button.nextElementSibling;
+      const isActive = button.classList.contains("active");
+
+      // 모든 버튼 닫기
+      document.querySelectorAll(".accordion-btn").forEach((btn) => {
+        btn.classList.remove("active");
+        btn.nextElementSibling.style.maxHeight = null;
+        btn.nextElementSibling.style.padding = "0 20px";
+      });
+
+      // 현재 클릭한 버튼만 열기
+      if (!isActive) {
+        button.classList.add("active");
         content.style.maxHeight = content.scrollHeight + "px";
+        content.style.padding = "10px 20px";
       }
     });
   });
