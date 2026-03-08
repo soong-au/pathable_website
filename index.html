@@ -1,69 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pathable - Coming Soon</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      color: #004080;
-      text-align: center;
-    }
-    .container {
-      max-width: 500px;
-      padding: 2rem;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    p {
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
-    }
-    input[type="email"] {
-      padding: 0.5rem;
-      width: 70%;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      margin-bottom: 1rem;
-    }
-    button {
-      padding: 0.5rem 1rem;
-      background-color: #004080;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #0066cc;
-    }
-    footer {
-      margin-top: 1.5rem;
-      font-size: 0.85rem;
-      color: #666;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Pathable</h1>
-    <p>Our website is coming soon! We’re preparing a brand new experience for NDIS physiotherapy services.</p>
 
-    <footer>
-      &copy; 2025 Pathable. All rights reserved.
-    </footer>
-  </div>
+<head>
+    <!-- Google Analytics (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4D0MYTX5H5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-4D0MYTX5H5');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathable - Mobile Physiotherapy Services</title>
+    <meta name="description"
+        content="NDIS Registered Mobile Physiotherapy. Specialized Neurological & Disability Support.">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+        <!-- Header Section -->
+        <header class="header-navy">
+            <div class="logo-container">
+                <div class="logo-text">
+                    <span class="logo-path">Path</span><span class="logo-able">able</span>
+                </div>
+            </div>
+            <span class="sub-header-white">Mobile Physiotherapy Services</span>
+            <span class="sub-header-mint">NDIS Registered Provider</span>
+            <a href="https://forms.gle/Uv3gjQEqSjGThZYc6" class="btn-primary" target="_blank">Refer Now</a>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="hero-slogan">
+                <p class="slogan-text">
+                    <span class="slogan-highlight">Your Path. <br class="mobile-only">Your Possibility.</span>
+                    We walk with you<br>
+                    from support <br class="mobile-only">to independence,<br>
+                    from today to <br class="mobile-only">what’s possible.
+                </p>
+            </section>
+
+            <!-- 3 Core Promises -->
+            <section class="section-padding">
+                <div class="promise-item">
+                    <div class="promise-icon"><i class="fas fa-bolt"></i></div>
+                    <div class="promise-content">
+                        <h3>Zero Waitlist</h3>
+                        <p>Once confirmed, sessions commence within the same or following week.</p>
+                    </div>
+                </div>
+                <div class="promise-item">
+                    <div class="promise-icon"><i class="fas fa-file-medical"></i></div>
+                    <div class="promise-content">
+                        <h3>48-Hour Report Turnaround</h3>
+                        <p>Efficient and accurate documentation for NDIS reviews.</p>
+                    </div>
+                </div>
+                <div class="promise-item">
+                    <div class="promise-icon"><i class="fas fa-car-side"></i></div>
+                    <div class="promise-content">
+                        <h3>Mobile Service</h3>
+                        <p>Serving Thornleigh & Surrounding Suburbs.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Specialised In -->
+            <section class="specialised-section">
+                <h2 class="specialised-title">Specialised In:</h2>
+                <ul class="specialised-list">
+                    <li>Neurological Rehabilitation (Stroke, MS, Parkinson’s and more)</li>
+                    <li>Autism Spectrum Disorder (ASD)</li>
+                    <li>Cerebral Palsy (CP)</li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="footer-section">
+            <a href="https://forms.gle/Uv3gjQEqSjGThZYc6" class="footer-btn" target="_blank">Make a Referral</a>
+            <div class="contact-info">
+                Or email us directly at: <br>
+                <a href="mailto:info@pathable.com.au" class="contact-email">info@pathable.com.au</a>
+            </div>
+        </footer>
+    </div>
+
 </body>
+
 </html>
